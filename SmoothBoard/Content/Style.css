@@ -1,0 +1,41 @@
+﻿body {
+}
+
+.container{
+    padding-top: 15px;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+#Content {
+    padding: 55px 50px;
+}
+
+.headerStuff {
+    height: 310px;
+    background-image: url('../Images/banner1.png');
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+.quote {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 2px 2px 8px black;
+    border: none;
+}
+
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 760px) {
+    .saying {
+        padding: 0 5%;
+    }
+}

@@ -14,6 +14,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link href="Content/footer-distributed-with-address-and-phones.css" rel="stylesheet" />
+    <link href="Content/Style.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -25,7 +27,8 @@
                 <header id="Header">
                     <div class="headerStuff .visible-md-block, hidden-xs">
                         <blockquote class="quote">
-                            <h3>"There's nothing quite like surfing by yourself in the middle of the Pacific Ocean,<br />
+                            <h3>
+                                "There's nothing quite like surfing by yourself in the middle of the Pacific Ocean,<br />
                                 but unpredictable weather patterns, below deck accommodation, sea snakes, coral cuts and packs of reef sharks<br />
                                 make it a trip for the committed seadog."
                             </h3>
@@ -34,7 +37,7 @@
                         </blockquote>
                     </div>
                     <%--                    Navigation lives here--%>
-                    <nav class="navbar-static-top navbar-inverse" data-spy="affix" data-offset-top="310">
+                    <nav class="navbar-static-top navbar-inverse" data-spy="affix" data-offset-top="310" style="padding: 0px 25px;">
                         <div class="container-fluid">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
