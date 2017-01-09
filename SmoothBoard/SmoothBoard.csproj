@@ -135,6 +135,10 @@
     <Content Include="Admin\examples\typography.html" />
     <Content Include="Admin\examples\upgrade.html" />
     <Content Include="Admin\examples\user.html" />
+    <Content Include="App_Data\SmoothboardDB.mdf" />
+    <Content Include="App_Data\SmoothboardDB_log.ldf">
+      <DependentUpon>SmoothboardDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\Style.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
@@ -193,6 +197,7 @@
     <Content Include="Admin\documentation\.DS_Store" />
     <Content Include="Admin\documentation\css\.DS_Store" />
     <Content Include="Admin\examples\.DS_Store" />
+    <Content Include="Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,7 +229,7 @@
     <Content Include="Images\bord1.png" />
     <Content Include="Images\bord2.png" />
     <Content Include="Images\bord3.png" />
-    <Content Include="Pages\Index.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -232,6 +237,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd.Master.cs">
       <DependentUpon>FrontEnd.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,17 +254,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Index.aspx.cs">
+    <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Index.aspx.designer.cs">
+    <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
